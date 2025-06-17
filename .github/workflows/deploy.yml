@@ -19,13 +19,13 @@ jobs:
         with:
           node-version: '18' # Or your preferred Node.js version
           cache: 'pnpm'
-          package-manager: 'pnpm' # Automatically installs pnpm
+          # package-manager: 'pnpm' # Removed: This input is not supported by actions/setup-node@v4
 
       - name: Install dependencies
-        run: pnpm install
+        run: npx pnpm install # Use npx to ensure pnpm is executed
 
       - name: Build Next.js app
-        run: pnpm run build
+        run: npx pnpm run build # Use npx to ensure pnpm is executed
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
