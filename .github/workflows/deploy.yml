@@ -14,20 +14,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install pnpm globally
+        run: npm install -g pnpm
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18' # Or your preferred Node.js version
-          cache: 'pnpm'
-
-      - name: Install pnpm globally
-        run: npm install -g pnpm
-
-      - name: Add npm global bin to PATH
-        run: echo "$(npm prefix -g)/bin" >> $GITHUB_PATH
-
-      - name: Verify pnpm installation
-        run: which pnpm
+          # Removed cache: 'pnpm' to isolate pnpm installation
 
       - name: Install dependencies
         run: pnpm install
