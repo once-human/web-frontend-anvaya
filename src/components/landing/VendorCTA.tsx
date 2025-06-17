@@ -15,7 +15,7 @@ export const VendorCTA = () => {
         Are You a Top-Tier Vendor?
       </motion.h2>
       <motion.p
-        className="mb-8 max-w-xl text-lg opacity-90 md:text-xl"
+        className="mb-8 max-w-xl text-lg opacity-90"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -25,7 +25,7 @@ export const VendorCTA = () => {
         event planners seeking your expertise.
       </motion.p>
       <motion.button
-        className="bg-primary-on text-primary rounded-full px-8 py-4 text-lg font-semibold transition hover:bg-white"
+        className="bg-primary-on text-primary dark:text-dark-surface-on dark:bg-dark-primary-on dark:hover:bg-dark-surface-variant rounded-full px-8 py-4 text-lg font-semibold transition hover:bg-white"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.5 }}

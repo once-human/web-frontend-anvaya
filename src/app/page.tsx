@@ -5,17 +5,20 @@ import { HowItWorks } from '@/components/landing/HowItWorks';
 import { FeaturedContent } from '@/components/landing/FeaturedContent';
 import { VendorCTA } from '@/components/landing/VendorCTA';
 import { Footer } from '@/components/Footer';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export default function HomePage() {
   return (
-    <main className="bg-surface text-surface-on min-h-screen">
-      <Header />
-      <Hero />
-      <HowItWorks />
-      <CategoriesSection />
-      <FeaturedContent />
-      <VendorCTA />
-      <Footer />
-    </main>
+    <ThemeProvider>
+      <main className="bg-surface text-surface-on min-h-screen">
+        <Header />
+        <Hero />
+        <HowItWorks />
+        <CategoriesSection />
+        <FeaturedContent />
+        <VendorCTA />
+        <Footer />
+      </main>
+    </ThemeProvider>
   );
 }

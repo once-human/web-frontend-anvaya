@@ -35,9 +35,9 @@ const featuredItems = [
 
 export const FeaturedContent = () => {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="bg-surface dark:bg-dark-surface mx-auto max-w-6xl px-6 py-20">
       <motion.h2
-        className="font-title text-surface-on mb-12 text-center text-3xl font-semibold md:text-4xl"
+        className="font-title text-surface-on dark:text-dark-surface-on mb-12 text-center text-3xl font-semibold md:text-4xl"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -49,7 +49,7 @@ export const FeaturedContent = () => {
         {featuredItems.map((item, index) => (
           <motion.div
             key={item.id}
-            className="bg-surface-container-low shadow-elevation-1 hover:shadow-elevation-3 overflow-hidden rounded-xl transition"
+            className="bg-surface-container-low dark:bg-dark-surface-container-low shadow-elevation-1 dark:shadow-dark-elevation-1 hover:shadow-elevation-3 dark:hover:shadow-dark-elevation-3 overflow-hidden rounded-xl transition"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -61,10 +61,10 @@ export const FeaturedContent = () => {
               className="h-48 w-full object-cover"
             />
             <div className="p-6">
-              <h3 className="text-surface-on mb-2 text-xl font-semibold">
+              <h3 className="text-surface-on dark:text-dark-surface-on mb-2 text-xl font-semibold">
                 {item.title}
               </h3>
-              <p className="text-surface-on-muted text-sm">
+              <p className="text-surface-on-muted dark:text-dark-surface-on-muted text-sm">
                 {item.description}
               </p>
             </div>

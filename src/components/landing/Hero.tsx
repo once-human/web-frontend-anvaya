@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <section className="bg-surface-container flex flex-col items-center justify-center px-6 py-24 text-center">
+    <section className="bg-surface-container dark:bg-dark-surface-container flex flex-col items-center justify-center px-6 py-24 text-center">
       <motion.h1
         className="font-display text-primary mb-6 text-4xl font-bold md:text-6xl"
         initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export const Hero = () => {
       </motion.h1>
 
       <motion.p
-        className="text-surface-on-muted mb-8 max-w-xl text-lg md:text-xl"
+        className="text-surface-on-muted dark:text-dark-surface-on-muted mb-8 max-w-xl text-lg md:text-xl"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
@@ -35,7 +35,7 @@ export const Hero = () => {
         <button className="bg-primary text-primary-on rounded-full px-6 py-3 font-medium transition hover:opacity-90">
           Find Vendors
         </button>
-        <button className="border-outline text-surface-on hover:bg-surface-variant rounded-full border px-6 py-3 transition">
+        <button className="border-outline dark:border-dark-outline text-surface-on dark:text-dark-surface-on hover:bg-surface-variant dark:hover:bg-dark-surface-variant rounded-full border px-6 py-3 transition">
           Explore Services
         </button>
       </motion.div>

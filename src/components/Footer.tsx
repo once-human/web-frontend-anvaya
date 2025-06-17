@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const Footer = () => {
   return (
     <motion.footer
-      className="bg-surface-container-low text-surface-on mt-20 w-full px-6 py-12 md:px-12 lg:px-20"
+      className="bg-surface-container-low dark:bg-dark-surface-container-low text-surface-on dark:text-dark-surface-on mt-20 w-full px-6 py-12 md:px-12 lg:px-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
@@ -23,7 +23,7 @@ export const Footer = () => {
               EM Platform
             </span>
           </div>
-          <p className="text-surface-on-muted text-sm">
+          <p className="text-surface-on-muted dark:text-dark-surface-on-muted text-sm">
             Your trusted partner for memorable event planning.
           </p>
         </div>
@@ -89,19 +89,19 @@ export const Footer = () => {
             {/* Replace with actual social media icons/links */}
             <a
               href="#"
-              className="text-surface-on hover:text-primary transition"
+              className="text-surface-on dark:text-dark-surface-on hover:text-primary transition"
             >
               FB
             </a>
             <a
               href="#"
-              className="text-surface-on hover:text-primary transition"
+              className="text-surface-on dark:text-dark-surface-on hover:text-primary transition"
             >
               IG
             </a>
             <a
               href="#"
-              className="text-surface-on hover:text-primary transition"
+              className="text-surface-on dark:text-dark-surface-on hover:text-primary transition"
             >
               TW
             </a>
@@ -109,7 +109,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="border-outline/20 text-surface-on-muted mt-12 border-t pt-8 text-center text-sm">
+      <div className="border-outline/20 dark:border-dark-outline/20 text-surface-on-muted dark:text-dark-surface-on-muted mt-12 border-t pt-8 text-center text-sm">
         © {new Date().getFullYear()} EM Platform. All rights reserved.
       </div>
     </motion.footer>
