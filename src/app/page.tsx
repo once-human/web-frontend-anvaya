@@ -2,6 +2,9 @@ import { Hero } from '@/components/landing/Hero';
 import { CategoriesSection } from '@/components/landing/CategoriesSection';
 import { Header } from '@/components/Header';
 import { HowItWorks } from '@/components/landing/HowItWorks';
+import { FeaturedContent } from '@/components/landing/FeaturedContent';
+import { VendorCTA } from '@/components/landing/VendorCTA';
+import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
   return (
@@ -10,6 +13,9 @@ export default function HomePage() {
       <Hero />
       <HowItWorks />
       <CategoriesSection />
+      <FeaturedContent />
+      <VendorCTA />
+      <Footer />
     </main>
   );
 }
